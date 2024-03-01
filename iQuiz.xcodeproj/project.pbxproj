@@ -13,6 +13,7 @@
 		C30D89EC2B90291400CDB99A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D89EA2B90291400CDB99A /* Main.storyboard */; };
 		C30D89EE2B90291500CDB99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30D89ED2B90291500CDB99A /* Assets.xcassets */; };
 		C30D89F12B90291500CDB99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D89EF2B90291500CDB99A /* LaunchScreen.storyboard */; };
+		C3696D9D2B91607000E43170 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3696D9C2B91607000E43170 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C30D89ED2B90291500CDB99A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30D89F02B90291500CDB99A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30D89F22B90291500CDB99A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3696D9C2B91607000E43170 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C30D89E42B90291400CDB99A /* AppDelegate.swift */,
 				C30D89E62B90291400CDB99A /* SceneDelegate.swift */,
 				C30D89E82B90291400CDB99A /* ViewController.swift */,
+				C3696D9C2B91607000E43170 /* QuestionViewController.swift */,
 				C30D89EA2B90291400CDB99A /* Main.storyboard */,
 				C30D89ED2B90291500CDB99A /* Assets.xcassets */,
 				C30D89EF2B90291500CDB99A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				C30D89E92B90291400CDB99A /* ViewController.swift in Sources */,
 				C30D89E52B90291400CDB99A /* AppDelegate.swift in Sources */,
+				C3696D9D2B91607000E43170 /* QuestionViewController.swift in Sources */,
 				C30D89E72B90291400CDB99A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

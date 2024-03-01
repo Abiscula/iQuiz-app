@@ -64,15 +64,92 @@
                     <view key="view" contentMode="scaleToFill" id="5r5-yN-OrI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo da Questão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLx-HT-Ttz">
+                                <rect key="frame" x="64" y="206" width="247" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBk-DM-xqB">
+                                <rect key="frame" x="64" y="314" width="247" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="cJV-ur-G62"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressRespBtn:" destination="naA-Hz-xbZ" eventType="touchUpInside" id="SGA-na-aX5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZh-nL-bWe">
+                                <rect key="frame" x="64" y="408" width="247" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="biI-3R-WTO"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressRespBtn:" destination="naA-Hz-xbZ" eventType="touchUpInside" id="4O8-Bu-q3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipt-xy-lo6">
+                                <rect key="frame" x="64" y="502" width="247" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="pia-fL-6II"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressRespBtn:" destination="naA-Hz-xbZ" eventType="touchUpInside" id="uQI-Zz-hYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8fR-vz-oky"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ipt-xy-lo6" firstAttribute="top" secondItem="IZh-nL-bWe" secondAttribute="bottom" constant="32" id="445-XS-SzS"/>
+                            <constraint firstItem="CLx-HT-Ttz" firstAttribute="top" secondItem="8fR-vz-oky" secondAttribute="top" constant="112" id="6Hv-6P-thd"/>
+                            <constraint firstItem="CLx-HT-Ttz" firstAttribute="top" secondItem="8fR-vz-oky" secondAttribute="top" constant="112" id="B7x-Q5-E9u"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="IZh-nL-bWe" secondAttribute="trailing" constant="64" id="Bge-dL-JuD"/>
+                            <constraint firstItem="ipt-xy-lo6" firstAttribute="leading" secondItem="8fR-vz-oky" secondAttribute="leading" constant="64" id="NaL-2E-mXQ"/>
+                            <constraint firstItem="IZh-nL-bWe" firstAttribute="top" secondItem="vBk-DM-xqB" secondAttribute="bottom" constant="32" id="Ppy-nh-XmN"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="CLx-HT-Ttz" secondAttribute="trailing" constant="64" id="TKF-KR-oAC"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="CLx-HT-Ttz" secondAttribute="trailing" constant="64" id="dzJ-Ey-mFp"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="CLx-HT-Ttz" secondAttribute="trailing" constant="64" id="e0s-8l-mC9"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="vBk-DM-xqB" secondAttribute="trailing" constant="64" id="hcb-uC-2lh"/>
+                            <constraint firstItem="8fR-vz-oky" firstAttribute="trailing" secondItem="ipt-xy-lo6" secondAttribute="trailing" constant="64" id="j1n-zT-GAG"/>
+                            <constraint firstItem="IZh-nL-bWe" firstAttribute="leading" secondItem="8fR-vz-oky" secondAttribute="leading" constant="64" id="s24-dD-VsR"/>
+                            <constraint firstItem="vBk-DM-xqB" firstAttribute="leading" secondItem="8fR-vz-oky" secondAttribute="leading" constant="64" id="teG-Tf-9Gf"/>
+                            <constraint firstItem="CLx-HT-Ttz" firstAttribute="leading" secondItem="8fR-vz-oky" secondAttribute="leading" constant="64" id="vAq-LI-f9H"/>
+                            <constraint firstItem="CLx-HT-Ttz" firstAttribute="leading" secondItem="8fR-vz-oky" secondAttribute="leading" constant="64" id="xBF-CU-gGj"/>
+                            <constraint firstItem="vBk-DM-xqB" firstAttribute="top" secondItem="CLx-HT-Ttz" secondAttribute="bottom" constant="72" id="yEJ-1s-T03"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kno-az-FRk"/>
+                    <connections>
+                        <outlet property="questionTitleLabel" destination="CLx-HT-Ttz" id="Kmx-N8-NZX"/>
+                        <outletCollection property="respsBtn" destination="vBk-DM-xqB" collectionClass="NSMutableArray" id="a4o-Hf-1g7"/>
+                        <outletCollection property="respsBtn" destination="IZh-nL-bWe" collectionClass="NSMutableArray" id="dzj-Fa-vsB"/>
+                        <outletCollection property="respsBtn" destination="ipt-xy-lo6" collectionClass="NSMutableArray" id="ex9-yD-SsQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qnG-MV-MpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1737" y="-28"/>
+            <point key="canvasLocation" x="1736.8" y="-28.078817733990149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zdr-oU-aBU">

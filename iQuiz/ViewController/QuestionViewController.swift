@@ -27,10 +27,16 @@ class QuestionViewController: UIViewController {
       
       if questionNumber < questions.count - 1 {
         questionNumber += 1
-        questionConfig()
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(questionConfig), userInfo: nil, repeats: false)
+      } else {
+        goToPerfomanceScreen()
       }
       
     }
+  
+  func goToPerfomanceScreen() {
+    performSegue(withIdentifier: "goToPerfomanceScreen", sender: nil)
+  }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,13 +53,18 @@ class QuestionViewController: UIViewController {
       }
     }
   
-  func questionConfig() {
+  @objc func questionConfig() {
     questionTitleLabel.text = questions[questionNumber].title
     for button in respsBtn {
       let btnTitle = questions[questionNumber].responses[button.tag]
       button.setTitle(btnTitle, for: .normal)
       button.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
     }
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let perfomanceVC = segue.destination as? PerformanceViewController else { return }
+    perfomanceVC.points = points
   }
   
   /*
